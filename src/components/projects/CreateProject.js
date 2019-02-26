@@ -21,9 +21,9 @@ class CreateProject extends Component {
 
   render() {
     return (
-      <div className="container">
-        <form onSubmit={this.handleSubmit} className="white">
-          <h5 className="grey-text text-darken-3">Sign In</h5>
+      <div className="container row">
+        <form onSubmit={this.handleSubmit} className="col s12 m8 offset-m2 white">
+          <h5 className="grey-text text-darken-3">Create idea</h5>
           <div className="input-field">
             <label htmlFor="title">Title</label>
             <input type="text" id="title" onChange={this.handleChange}/>
@@ -35,7 +35,7 @@ class CreateProject extends Component {
           </div>
       
           <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Submit</button>
+            <button className="btn lighten-1 z-depth-0">Submit</button>
           </div>
         </form>
       </div>
